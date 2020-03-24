@@ -1,0 +1,19 @@
+<div class = 'no-results' *ngIf="breweryList?.length === 0; else showList">
+    No results available
+</div>
+<ng-template #showList>
+    <div>
+        <div class = "breweryList" *ngFor="let brewery of breweryList">
+            <div class= "breweryList__wrapper">
+                <div class= "breweryList__element">
+                    <h4> {{ brewery.name }} </h4>
+                    <span>{{brewery.website_url}}</span>
+                </div>
+                <div style="display: flex;
+                flex-flow: row">
+                    <span>{{brewery.city}} , {{brewery.state}} </span>
+               </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

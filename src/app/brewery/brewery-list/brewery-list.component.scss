@@ -1,0 +1,22 @@
+
+.no-results {
+    margin-top: 25%;
+    text-align: center; 
+}
+
+.breweryList {
+    padding: 5px;
+    background-color: lightcyan;
+
+    &__wrapper {
+        background-color: white; padding:5px
+    }
+
+    &__element {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between; 
+        align-items: flex-end; 
+        padding:5px
+    }
+}
